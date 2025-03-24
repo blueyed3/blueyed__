@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #292929;
+    font-family: 'Courier', monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: #94d4ff;
+    text-align: center;
+    font-size: 72px;
+}
+
+.nav {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #94d4ff;
+}
+
+a:hover {
+    color: #474747;
+}
+
+.anav {
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    flex: 1;
+}
+
+.section {
+    align-items: center;
+    text-align: center;
+}
+
+.aicon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+
+.completed {
+    color: greenyellow;
+    font-size: 20px;
+    text-shadow: rgb(105, 155, 29);
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+}
+
+.wip {
+    color: orange;
+    font-size: 20px;
+    text-shadow: rgb(184, 120, 1);
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+}
+
+.abandoned {
+    color: red;
+    font-size: 20px;
+    text-shadow: rgb(143, 0, 0);
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+}
+
+.plans {
+    color: rgb(95, 218, 255);
+    font-size: 20px;
+    text-shadow: rgb(56, 127, 148);
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+}
+
+div {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.aboutmediv {
+    color: #94d4ff;
+    text-align: center;
+}
+
+.amsection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.typewriter {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typewriter::after {
+    content: "";
+    display: inline-block;
+    width: 0.6em;
+    height: 1em;
+    background-color: #94d4ff;
+    margin-left: 5px;
+    vertical-align: -10%;
+    animation: blink 0.8s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.delayed {
+    animation: none;
+}
+
+@keyframes pulseGlow {
+    0% { text-shadow: 0 0 3px; }
+    50% { text-shadow: 0 0 10px; }
+    100% { text-shadow: 0 0 3px; }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.projectsfooter {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.projecta{
+    color: white;
+}
+
+.me{
+    max-width: 350x;
+    max-height: 350px;
+}
