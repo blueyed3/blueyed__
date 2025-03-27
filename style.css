@@ -284,6 +284,6 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: none;
+    cursor: not-allowed;
     transition: background-color 0.3s;
 }
